@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple JavaScript Example</title>
+</head>
+<body>
+    <h1>My First Heading</h1>
+    <p id="text">This is the original text.</p>
+    
+    <!-- Button that will trigger the JavaScript to change the text -->
+    <button id="changeTextBtn">Click to Change Text</button>
+
+    <script>
+        // JavaScript that changes the text when the button is clicked
+        document.getElementById("changeTextBtn").onclick = function() {
+            document.getElementById("text").innerHTML = "The text has been changed!";
+        };
+    </script>
+</body>
+</html>

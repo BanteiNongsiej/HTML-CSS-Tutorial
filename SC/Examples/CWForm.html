@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Form</h1>
+    <form action="#" method="post">
+        <label for="username">Name</label>
+        <input type="text" name="username" pattern="[a-zA-Z]{2,}" title="Only alphabet is allow"   id="username" placeholder="Enter your name" required>
+         <br>
+        <label for="rollno">Roll No</label>
+        <input type="text" name="" id="rollno" pattern="[0-3]*" title="Should have this format 24BCA03">
+         <br>
+         <label for="age">Age</label>
+         <input type="text" name="" min="2" max="5" pattern="[0-9]{2,5}" title="Age should not have more than four digit" id="age" required  title="Only number is allowed"><br>
+         <label for="email">Email</label>
+         <input type="email" name="email" id="email"><br>
+        <label for="password">Password</label>
+        <input type="password" name="" id="password"><br>
+        <label for="course">Course</label>
+        <select name="course" id="course">
+            <option value="arts">Arts</option>
+            <option value="science">Science</option>
+            <option value="commerce">Commerce</option>
+        </select>
+        <p>Gender</p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male"><br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <br><label for="join">Date of Joining</label>
+        <input type="date" name="" id="join" min="2020-01-02" max="2024-01-01">
+        <br><label for="dob">Date of birth</label>
+        <input type="text" name="dob" pattern="[0-9]{2}-\d\d-\d\d\d\d" title="the date should mm-dd-yyyy" id="dob">
+        <br>
+        <label for="rate">Rate</label>
+        <input type="range" name="" id="rate" min="0" max="10" step="0" value="0" >
+        <p>Hobbies</p>
+        <label for="reading">Reading</label>
+        <input type="checkbox" name="hobbies" id="reading" value="reading">
+        <label for="football">Football</label>
+        <input type="checkbox" name="" id="football" value="football">
+        <label for="swimming">Swimming</label>
+        <input type="checkbox" name="hobbies" id="swimming" value="swimming">
+        <label for="photo_pdf">Passport</label>
+        <input type="file" name="" id="photo_pdf" accept=".jpeg"><br>
+        <label for="description">Description</label>
+        <textarea name="description" id=""></textarea>
+        
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset Fields">
+        
+    </form>
+    <label for="rollno">Roll No</label>
+    <input type="text" name="rollno" id="rollno">
+</body>
+</html>

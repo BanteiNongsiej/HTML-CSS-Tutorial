@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media and Table Example</title>
+</head>
+<body>
+
+    <h1>HTML Media Tags and Tables</h1>
+
+    <h2>Media Tags</h2>
+
+    <h3>Image (img)</h3>
+    <p>Displaying an image using the <img> tag:</p>
+    <img src="../first.jpeg" alt="A beautiful view" width="300">
+
+    <h3>Video (video)</h3>
+    <p>Embedding a video using the <video> tag:</p>
+    <video width="320" height="240" controls>
+        <source src="../VID-20230820-WA0093.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h3>Audio (audio)</h3>
+    <p>Embedding audio using the <audio> tag:</p>
+    <audio controls>
+        <source src="../audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>Object (object)</h3>
+    <p>Embedding content like PDFs using the <object> tag:</p>
+    <object data="../144_AIML_Geodata_Analysis.pdf" type="application/pdf" width="600" height="400">
+        Your browser does not support embedded PDFs. 
+    </object>
+
+    <h3>Embed (embed)</h3>
+    <p>Embedding external content like a YouTube video using the <embed> tag:</p>
+    <embed src="../144_AIML_Geodata_Analysis.pdf" width="560" height="315">
+
+    <h2>Anchor Tag (a)</h2>
+    <p>Linking to another HTML file using the <a> tag:</p>
+    <p><a href="another_page.html">Go to Another Page</a></p>
+
+    <h2>Table with Colspan and Rowspan</h2>
+    <p>Creating a table with merged cells using <colspan> and <rowspan>:</p>
+    
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th colspan="2">Availability</th>
+        </tr>
+        <tr>
+            <td>Apples</td>
+            <td>$2.00</td>
+            <td rowspan="2">In Stock</td>
+            <td>500 pcs</td>
+        </tr>
+        <tr>
+            <td>Bananas</td>
+            <td>$1.50</td>
+            <td>300 pcs</td>
+        </tr>
+        <tr>
+            <td colspan="2">Total Fruits</td>
+            <td colspan="2">800 pcs</td>
+        </tr>
+    </table>
+
+</body>
+</html>
