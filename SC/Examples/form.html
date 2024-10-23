@@ -7,9 +7,9 @@
 
 <h2>Registration Form</h2>
 
-<form action="/submit" method="post">
+<form action="#" method="get">
     <label for="username">Username:</label>
-    <input type="text" id="username"  placeholder="Enter your name" name="username"  required>
+    <input type="text" id="username" title="Only is allow"   placeholder="Enter your name" name="username"  required>
     <br><br>
 
     <label for="password">Password:</label>
@@ -17,13 +17,15 @@
     <br><br>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="Enter your email" name="email"  required>
+    <input type="email" id="email" pattern="[a-zA-Z@.0-9]*" placeholder="Enter your email" name="email"  required>
     <br><br>
 
     <label for="age">Age:</label>
-    <input type="number" placeholder="Your age" id="age" name="age" min="3" max="7" required>
+    <input type="text" placeholder="Your age"  title="Only nuimber is allowed" id="age" name="age" required>
     <br><br>
-    
+    <label for="rollno">Roll No</label>
+    <input type="text" name="rollno"  title="Should be in the format 22BCA123" id="rollno">
+    <br><br>
     <label for="country">Country:</label>
     <select id="country" name="country">
         <option value="us">United States</option>
@@ -31,7 +33,8 @@
         <option value="uk">United Kingdom</option>
     </select>
     <br><br>
-
+    <label for="mobile">Phone</label>
+    <input type="text" name="mobile" id="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="333-444-4444">
     <p>Gender:</p>
     <label for="male">Male</label>
     <input type="radio" id="male" name="gender" value="male">
